@@ -1,4 +1,4 @@
-const APIResponse = require('./APIResponse');
+const {APIResponse} = require('rest-api-response');
 module.exports = (handler) =>
     async (req, res, next) => {
         try {
