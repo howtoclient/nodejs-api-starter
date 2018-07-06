@@ -75,7 +75,6 @@ First login using the [login api](post-login-api). You will recieve a token.
     "status": 200,
     "data": {
         "username": "blox-user",
-        "password": "blox-rocks",
         "name": "blox.io",
         "token": "27bade39-c5ec-4249-b858-7e6dca65f0e1"
     },
