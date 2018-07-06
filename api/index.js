@@ -4,6 +4,8 @@ const
     morgan = require('morgan'),
     cors = require('./system/cors'),
     errors = require('./system/errors'),
+    login = require('./system/login'),
+    authentication = require('./system/authentication'),
     routes = require('./routes'),
     api = require('express')();
 
@@ -14,7 +16,9 @@ api.use(cors);
 api.use(bodyParser.json());
 api.use(bodyParser.urlencoded({extended: true}));
 api.use(helmet());
-api.use('/',routes);
-api.use('/',errors);
+api.use(login);
+api.use(authentication);
+api.use('/', routes);
+api.use('/', errors);
 
-module.exports=api;
+module.exports = api;

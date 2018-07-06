@@ -21,7 +21,10 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "helmet": "^3.12.1",
+    "lowdb": "^1.0.0",
     "morgan": "^1.9.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
     "rest-api-response": "^0.7.5",
     "uuid": "^3.3.2"
   }

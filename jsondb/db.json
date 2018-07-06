@@ -1,0 +1,33 @@
+{
+  "tokens": [
+    {
+      "tokenId": 1,
+      "_userId": 1
+    },
+    {
+      "tokenId": 2,
+      "_userId": 1
+    },
+    {
+      "tokenId": 3,
+      "_userId": 1
+    }
+  ],
+  "users": [
+    {
+      "_id": 1,
+      "username": "blox-user",
+      "_password": "blox-rocks",
+      "name": "blox.io",
+      "token": "177820c6-830a-476d-9d7b-a9abbc0f3ab1"
+    },
+    {
+      "_id": 2,
+      "username": "vladi-user",
+      "_password": "blox-vladi",
+      "name": "Vladi",
+      "token": "27bade39-c5ec-4249-b858-7e6dca65f0e1"
+    }
+  ],
+  "user": {}
+}

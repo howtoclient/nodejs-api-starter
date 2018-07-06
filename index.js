@@ -5,6 +5,6 @@ const
 (async () => {
     api.listen(config.port, () => {
         //databases should be required here
-        console.log("working!");
+        console.log("running on port ",config.port);
     })
 })();

@@ -1,8 +1,12 @@
 const
     router = require('express').Router(),
     notFound = require("./404"),
-    testRoutes = require('./test-routes');
+    tokens = require("./tokens"),
+    tokensInfo = require("./tokensInfo"),
+    user = require("./user");
 
-router.use('/',testRoutes);
+router.use('/user',user);
+router.use('/user/tokens',tokens);
+router.use('/tokens-info',tokensInfo);
 router.use('/',notFound);
 module.exports = router;
