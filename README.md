@@ -1,4 +1,13 @@
 ## API doc
+Node Parameters
+```
+
+    NODE_ENV= "dev" or "prod"                                   //server mode ( dev for debug )
+    ALLOWED_DOMAINS= "http://localhost:3000,http://127.0.0.1"   //list of allowed web referes separated by ','
+    PORT= 8888                                                  //Port to start the server on
+```
+
+## API Contents
 
 - [**API Response Structure**](api-response-structure)
 - [**Authorization**](authorization)
