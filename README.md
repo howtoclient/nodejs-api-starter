@@ -9,6 +9,7 @@
     - [**GET** - /user/tokens](get-user-tokens-api) - get user token ids
 - [**GET** - /user/tokens](get-tokens-info-api) - get all available tokens info
 - [**POST** - /tokens-info](post-tokens-info-api) - get specific tokens info
+- [**ANY METHOD** - /error](any-error-api) - just throws 500 errors
 
 ---
 
@@ -273,4 +274,24 @@ Response body:
 }
 ```
 
+---
+
+
+### ANY error API
+Always throws 500 error, used for making error handling.
+
+Response body:
+#### Error Example
+```
+{
+    "status": 500,                                                          //Int - status code
+    "data": null,                                                           //Null - error shouldnt contain data
+    "error": {                                                              //Obj - Error Object
+        "errorId": "520093d1-28df-4ee1-8a07-a7219057f70b",                  //String - error id also writtent to logs
+        "message": "This is an error api. Always throws stuff at you...",   //String - error message
+        "body": [..]                                                        //Array Of String - when in dev error stack
+    },
+    "success": false                                                        //Bool
+}
+```
 ---
