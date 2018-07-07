@@ -6,6 +6,8 @@ Node Parameters
     PORT= 8888                                                  //Port to start the server on
 ```
 
+[**skip to api contents**](#api-contents)
+
 ### Requesting with postman
 Postman by default is sending `Content-Type - multipart/form-data` witch the API doesn't support.To make the API work please setup:
 ```
@@ -18,6 +20,8 @@ like so:
 To send RAW Json data go to `body-> raw` like so:
 
 ![postman body config](./static/postman-body.jpg)
+
+---
 
 ## API Contents
 
@@ -132,6 +136,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -150,6 +155,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -176,6 +182,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -214,6 +221,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -244,6 +252,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -293,6 +302,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
+[**back to api contents**](#api-contents)
 
 ---
 
@@ -314,4 +324,6 @@ Response body:
     "success": false                                                        //Bool
 }
 ```
+[**back to api contents**](#api-contents)
+
 ---
