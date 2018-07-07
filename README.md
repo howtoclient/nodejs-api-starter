@@ -1,24 +1,36 @@
 ## API doc
 Node Parameters
 ```
-
     NODE_ENV= "dev" or "prod"                                   //server mode ( dev for debug )
     ALLOWED_DOMAINS= "http://localhost:3000,http://127.0.0.1"   //list of allowed web referes separated by ','
     PORT= 8888                                                  //Port to start the server on
 ```
 
+### Requesting with postman
+Postman by default is sending `Content-Type - multipart/form-data` witch the API doesn't support.To make the API work please setup:
+```
+Content-Type: application/json
+```
+like so:
+
+![postman header config](./static/postman-headers.jpg)
+
+To send RAW Json data go to `body-> raw` like so:
+
+![postman body config](./static/postman-body.jpg)
+
 ## API Contents
 
-- [**API Response Structure**](api-response-structure)
-- [**Authorization**](authorization)
+- [**API Response Structure**](#api-response-structure)
+- [**Authorization**](#authorization)
 
-- [**POST** - /login](post-login-api) - simple login api
-- [**GET** - /user](get-user-api) - get user data
-    - [**POST** - /user/tokens](post-user-tokens-api) - set user token ids
-    - [**GET** - /user/tokens](get-user-tokens-api) - get user token ids
-- [**GET** - /user/tokens](get-tokens-info-api) - get all available tokens info
-- [**POST** - /tokens-info](post-tokens-info-api) - get specific tokens info
-- [**ANY METHOD** - /error](any-error-api) - just throws 500 errors
+- [**POST** - /login](#post-login-api) - simple login api
+- [**GET** - /user](#get-user-api) - get user data
+    - [**POST** - /user/tokens](#post-user-tokens-api) - set user token ids
+    - [**GET** - /user/tokens](#get-user-tokens-api) - get user token ids
+- [**GET** - /user/tokens](#get-tokens-info-api) - get all available tokens info
+- [**POST** - /tokens-info](#post-tokens-info-api) - get specific tokens info
+- [**ANY METHOD** - /error](#any-error-api) - just throws 500 errors
 
 ---
 
@@ -69,7 +81,7 @@ if `NODE_ENV` is set to 'dev' it will show the message and error body ( for deve
 
 ### Authorization
 
-First login using the [login api](post-login-api). You will recieve a token.
+First login using the [login api](#post-login-api). You will recieve a token.
 ```
 {
     "status": 200,
