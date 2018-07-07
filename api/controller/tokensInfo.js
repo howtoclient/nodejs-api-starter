@@ -48,7 +48,7 @@ const getSpecificTokens = async (req)=>{
     const {
         tokenIds
     } = req.body;
-    if (!tokenIds || !Array.isArray(tokenIds) || tokenIds.some(tokenId=> isNaN(+tokenId))) {
+    if (!tokenIds || !Array.isArray(tokenIds) || !tokenIds.every(tokenId=> !isNaN(+tokenId))) {
         throw new ValidationError("Invalid Token Ids");
     }
     const
