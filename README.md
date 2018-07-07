@@ -260,7 +260,7 @@ Response body:
 ---
 
 ### POST Tokens Info API
-Returns list of requestd tokens by id and their data
+Requests list of requestd tokens by id and their data
 
 Request body:
 ```
