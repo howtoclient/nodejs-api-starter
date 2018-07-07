@@ -1,16 +1,12 @@
 {
   "tokens": [
     {
-      "tokenId": 1,
+      "tokenId": 11,
       "_userId": 1
     },
     {
-      "tokenId": 2,
-      "_userId": 1
-    },
-    {
-      "tokenId": 3,
-      "_userId": 1
+      "tokenId": 123,
+      "_userId": 3
     }
   ],
   "users": [
@@ -19,7 +15,7 @@
       "username": "blox-user",
       "_password": "blox-rocks",
       "name": "blox.io",
-      "token": "177820c6-830a-476d-9d7b-a9abbc0f3ab1"
+      "token": "bd09078d-05d0-4d52-b888-73f6d0264a7c"
     },
     {
       "_id": 2,
@@ -30,10 +26,10 @@
     },
     {
       "_id": 3,
-      "username": "blox-new-user",
-      "_password": "blox-new-password",
+      "username": "vitaliy-user",
+      "_password": "vitaliy-password",
       "name": "Vitaliy",
-      "token": "f1286209-0982-4f36-bafa-a1eb8e59ae0a"
+      "token": "efb8db4f-2f99-48d9-be35-2ec93938e770"
     }
   ],
   "user": {}
