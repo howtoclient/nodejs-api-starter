@@ -17,7 +17,7 @@ const setUserTokens = async (req) => {
         user,
         body: {tokenIds}
     } = req;
-    if (!tokenIds || !Array.isArray(tokenIds) || tokenIds.some(tokenId=> isNaN(parseInt(tokenId)))) {
+    if (!tokenIds || !Array.isArray(tokenIds) || tokenIds.some(tokenId=> isNaN(+tokenId))) {
         throw new ValidationError("Invalid Token Ids");
     }
 
