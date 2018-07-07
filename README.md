@@ -81,6 +81,8 @@ if `NODE_ENV` is set to 'dev' it will show the message and error body ( for deve
     "success": false
 }
 ```
+[back to api contents](#api-contents)
+
 ---
 
 ### Authorization
@@ -107,6 +109,7 @@ Content-Type: application/json
 Authorization: 27bade39-c5ec-4249-b858-7e6dca65f0e1
 Cache-Control: no-cache
 ```
+[back to api contents](#api-contents)
 
 ---
 
@@ -136,7 +139,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -155,7 +158,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -182,7 +185,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -221,7 +224,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -252,7 +255,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -302,7 +305,7 @@ Response body:
     "success": true                                         //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
 
@@ -324,6 +327,6 @@ Response body:
     "success": false                                                        //Bool
 }
 ```
-[**back to api contents**](#api-contents)
+[back to api contents](#api-contents)
 
 ---
