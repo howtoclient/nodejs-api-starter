@@ -17,8 +17,8 @@ const setUserTokens = async (req) => {
         user,
         body: {tokenIds}
     } = req;
-    if (!tokenIds || !Array.isArray(tokenIds)) {
-        throw new ValidationError("No Token Ids provided");
+    if (!tokenIds || !Array.isArray(tokenIds) || !tokenIds.every(tokenId=> isNaN(parseInt(tokenId)))) {
+        throw new ValidationError("Invalid Token Ids");
     }
 
     const tokens = jsondb.get('tokens');
@@ -30,7 +30,9 @@ const setUserTokens = async (req) => {
         }).write()
     );
     tokens.write();
-    return tokens.value();
+    return jsondb.get('tokens')
+        .filter({_userId: user._id})
+        .value() || [];
 };
 
 module.exports = {
