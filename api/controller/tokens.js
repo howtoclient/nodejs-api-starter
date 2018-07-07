@@ -7,7 +7,9 @@ const getUserTokens = async (req) => {
         user
     } = req;
 
-    return jsondb.get('tokens').find({_userId: user._id}).value() || [];
+    return jsondb.get('tokens')
+        .filter({_userId: user._id})
+        .value() || [];
 };
 
 const setUserTokens = async (req) => {

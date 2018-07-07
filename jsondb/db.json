@@ -27,6 +27,13 @@
       "_password": "blox-vladi",
       "name": "Vladi",
       "token": "27bade39-c5ec-4249-b858-7e6dca65f0e1"
+    },
+    {
+      "_id": 3,
+      "username": "blox-new-user",
+      "_password": "blox-new-password",
+      "name": "Vitaliy",
+      "token": "f1286209-0982-4f36-bafa-a1eb8e59ae0a"
     }
   ],
   "user": {}
